@@ -8,6 +8,12 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+KR&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
       integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
@@ -18,67 +24,89 @@
       src="https://kit.fontawesome.com/b6416cbed4.js"
       crossorigin="anonymous"
     ></script>
-    ;
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
     <header>
-      <div class="header_top">
-        <img src="images/logo.png" alt="광주씨티병원" />
-        <img src="images/call.png" alt="전화번호" />
-        <div class="phone_number">
-          <p>062-460-7999</p>
-          <p>FAX:062-480-7777</p>
-        </div>
-        <img src="images/time.png" alt="진료시간" />
-        <div class="time">
-          <p>평일</p>
-          <p>09:00 ~ 17:30</p>
-          <p>토요일</p>
-          <p>09:00 ~ 13:00</p>
-          <p>점심시간</p>
-          <p>12:30 ~ 14:00</p>
+      <div class="container margin-auto">
+        <div class="header_top d-flex justify-between">
+          <div class="logo">
+            <a href="index.html"
+              ><img src="images/logo.png" alt="광주씨티병원"
+            /></a>
+          </div>
+          <div class="d-flex">
+            <div class="d-flex">
+              <div><img src="images/call.png" alt="전화번호" /></div>
+              <div class="phone_number">
+                <span>062-460-7999</span>
+                <span>FAX:062-480-7777</span>
+              </div>
+            </div>
+            <div class="d-flex">
+              <div>
+                <p>진료시간</p>
+                <img src="images/time.png" alt="진료시간" />
+              </div>
+              <div class="time">
+                <p>평일</p>
+                <p>09:00 ~ 17:30</p>
+                <p>토요일</p>
+                <p>09:00 ~ 13:00</p>
+                <p>점심시간</p>
+                <p>12:30 ~ 14:00</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </header>
     <nav>
-      <ul>
-        <li>
-          <a href="#">진료안내&#183;예약</a>
-          <ul>
-            <li><a href="#">submenu</a></li>
-            <li><a href="#">submenu</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">이용안내</a>
-          <ul>
-            <li><a href="#">submenu</a></li>
-            <li><a href="#">submenu</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">정보마당</a>
-          <ul>
-            <li><a href="#">submenu</a></li>
-            <li><a href="#">submenu</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">병원소식</a>
-          <ul>
-            <li><a href="#">submenu</a></li>
-            <li><a href="#">submenu</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">병원소개</a>
-          <ul>
-            <li><a href="#">submenu</a></li>
-            <li><a href="#">submenu</a></li>
-          </ul>
-        </li>
-      </ul>
+      <div class="container margin-auto">
+        <ul class="gnb d-flex justify-between">
+          <li>
+            <i class="fa-solid fa-bars"></i>
+          </li>
+          <li>
+            <a href="#">진료안내&#183;예약</a>
+            <ul class="lnb">
+              <li><a href="#">submenu</a></li>
+              <li><a href="#">submenu</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">이용안내</a>
+            <ul class="lnb">
+              <li><a href="#">submenu</a></li>
+              <li><a href="#">submenu</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">정보마당</a>
+            <ul class="lnb">
+              <li><a href="#">submenu</a></li>
+              <li><a href="#">submenu</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">병원소식</a>
+            <ul class="lnb">
+              <li><a href="#">submenu</a></li>
+              <li><a href="#">submenu</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">병원소개</a>
+            <ul class="lnb">
+              <li><a href="#">submenu</a></li>
+              <li><a href="#">submenu</a></li>
+            </ul>
+          </li>
+          <li>
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </li>
+        </ul>
+      </div>
     </nav>
     <aside>
       <div class="slides">
@@ -93,180 +121,201 @@
       </div>
     </aside>
     <main>
-      <div class="select_boxs">
-        <div class="select_box box1">
-          <p>진료예약</p>
-          <p></p>
-          <div class="select_btns d-flex">
-            <button>진료예약</button>
-            <button>진료삼담</button>
+      <div class="container margin-auto">
+        <div class="select_boxs d-flex justify-between">
+          <div class="select_box pos-r box1">
+            <div class="select_text pos-a">
+              <p>진료예약</p>
+              <p>빠르고 쉽게 진료예약을<br>하실 수 있습니다.</p>
+            </div>
+            <div class="select_btns pos-a d-flex">
+              <button>진료예약</button>
+              <button>진료삼담</button>
+            </div>
           </div>
-        </div>
-        <div class="select_box box2">
-          <p>진료예약</p>
-          <p></p>
-          <div class="select_btns d-flex">
-            <button>원내지도</button>
-            <button>주변시설</button>
+          <div class="select_box pos-r box2">
+            <div class="select_text pos-a">
+              <p>원내위치도</p>
+              <p>병원의 진료과 / 주변시설을<br>상세히 확인할 수 있습니다.</p>
+            </div>
+            <div class="select_btns pos-a d-flex">
+              <button>원내지도</button>
+              <button>주변시설</button>
+            </div>
           </div>
-        </div>
-        <div class="select_box box3">
-          <p>진료예약</p>
-          <p></p>
-          <div class="select_btns d-flex">
-            <button>검진예약</button>
-            <button>진료상담</button>
+          <div class="select_box pos-r box3">
+            <div class="select_text pos-a">
+              <p>종합건강검진</p>
+              <p>종합건강검진을<br>간편하게 신청할 수 있습니다.</p>
+            </div>
+            <div class="select_btns pos-a d-flex">
+              <button>검진예약</button>
+              <button>진료상담</button>
+            </div>
           </div>
-        </div>
-        <div class="select_box box4">
-          <p>진료예약</p>
-          <p></p>
-          <div class="select_btns d-flex">
-            <button>치료예약</button>
-            <button>안내사항</button>
-          </div>
-        </div>
-      </div>
-      <article>
-        <div class="doctor_search">
-          <p>의료진 찾기</p>
-          <p>신뢰를 주는 병원,<br />사랑으로 함께하며 봉하는 병원</p>
-          <form>
-            <fieldset>
-              <input
-                type="text"
-                class="select_window"
-                placeholder="의료진/질병명 검색하기"
-              />
-              <!-- submit -->
-              <!-- <input type="submit" class="m_search_btn"> -->
-              <input type="submit" />검색
-            </fieldset>
-          </form>
-          <p>&#8211;대표원장 김명종 교수</p>
-          <img src="" alt="" />
-        </div>
-      </article>
-      <article>
-        <div class="tab">
-          <ul class="tab_title">
-            <li><a href="#">병원소식</a></li>
-            <li><a href="#">채용정보</a></li>
-            <li><a href="#">질병정보</a></li>
-            <li><a href="#">재활치료</a></li>
-            <li><img src="" alt="" /></li>
-          </ul>
-          <div class="tab_contents">
-            <div class="news">
-              <div class="news_top">
-                <div class="day">
-                  <p>14</p>
-                  <span>2023.11.14.</span>
-                </div>
-                <p>3내과 11월 진료일정변경안내</p>
-                <p>3내과 나명윤원 장님11월16일(목요일) 휴진입니다.</p>
-                <p>&#8211;내과</p>
-              </div>
-              <div class="news_bottum">
-                <p>9월 소아과 진료일정 변경안내</p>
-                <span>2023-11-09</span>
-                <p>10월 비뇨기과 진료일정 변경</p>
-                <span>2023-10-04</span>
-                <p>추석연휴 진료안내</p>
-                <span>2023-09-09</span>
-              </div>
+          <div class="select_box pos-r box1">
+            <div class="select_text pos-a">
+              <p>물리치료센터</p>
+              <p>물리치료 예약 및 안내사항을<br>확인할 수 있습니다.</p>
+            </div>
+            <div class="select_btns pos-a d-flex">
+              <button>치료예약</button>
+              <button>안내사항</button>
             </div>
           </div>
         </div>
-      </article>
+      </div>
+      <div class="container margin-auto">
+        <article>
+          <div class="doctor_search">
+            <p>의료진 찾기</p>
+            <p>신뢰를 주는 병원,<br />사랑으로 함께하며 봉하는 병원</p>
+            <form>
+              <fieldset>
+                <input
+                  type="text"
+                  class="select_window"
+                  placeholder="의료진/질병명 검색하기"
+                />
+                <!-- submit -->
+                <!-- <input type="submit" class="m_search_btn"> -->
+                <input type="submit" value="검색" />
+              </fieldset>
+            </form>
+            <p>&#8211;대표원장 김명종 교수</p>
+            <img src="" alt="" />
+          </div>
+        </article>
+        <article>
+          <div class="tab">
+            <ul class="tab_title">
+              <li><a href="#">병원소식</a></li>
+              <li><a href="#">채용정보</a></li>
+              <li><a href="#">질병정보</a></li>
+              <li><a href="#">재활치료</a></li>
+              <li><img src="" alt="" /></li>
+            </ul>
+            <div class="tab_contents">
+              <div class="news">
+                <div class="news_top">
+                  <div class="day">
+                    <p>14</p>
+                    <span>2023.11.14.</span>
+                  </div>
+                  <p>3내과 11월 진료일정변경안내</p>
+                  <p>3내과 나명윤원 장님11월16일(목요일) 휴진입니다.</p>
+                  <p>&#8211;내과</p>
+                </div>
+                <div class="news_bottum">
+                  <p>9월 소아과 진료일정 변경안내</p>
+                  <span>2023-11-09</span>
+                  <p>10월 비뇨기과 진료일정 변경</p>
+                  <span>2023-10-04</span>
+                  <p>추석연휴 진료안내</p>
+                  <span>2023-09-09</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
     </main>
     <section>
-      <p>믿음과 신뢰를 주는 <strong>광주씨티병원</strong>입니다.</p>
-      <div class="info">
-        <div class="info_box pos-r">
-          <img src="" class="pos-a" alt="" />
-          <p>건강정보</p>
-          <p>Lorem ipsum dolor sit amet consectetur. Metus.</p>
-        </div>
-        <div class="info_box pos-r">
-          <img src="" class="pos-a" alt="" />
-          <p>상담안내</p>
-          <p>Lorem ipsum dolor sit amet consectetur. Metus.</p>
-        </div>
-        <div class="info_box pos-r">
-          <img src="" class="pos-a" alt="" />
-          <p>종합검사</p>
-          <p>Lorem ipsum dolor sit amet consectetur. Metus.</p>
-        </div>
-        <div class="info_box pos-r">
-          <img src="" class="pos-a" alt="" />
-          <p>재활치료</p>
-          <p>Lorem ipsum dolor sit amet consectetur. Metus.</p>
+      <div class="container margin-auto">
+        <p>믿음과 신뢰를 주는 <strong>광주씨티병원</strong>입니다.</p>
+        <div class="info">
+          <div class="info_box pos-r">
+            <img src="" class="pos-a" alt="" />
+            <p>건강정보</p>
+            <p>Lorem ipsum dolor sit amet consectetur. Metus.</p>
+          </div>
+          <div class="info_box pos-r">
+            <img src="" class="pos-a" alt="" />
+            <p>상담안내</p>
+            <p>Lorem ipsum dolor sit amet consectetur. Metus.</p>
+          </div>
+          <div class="info_box pos-r">
+            <img src="" class="pos-a" alt="" />
+            <p>종합검사</p>
+            <p>Lorem ipsum dolor sit amet consectetur. Metus.</p>
+          </div>
+          <div class="info_box pos-r">
+            <img src="" class="pos-a" alt="" />
+            <p>재활치료</p>
+            <p>Lorem ipsum dolor sit amet consectetur. Metus.</p>
+          </div>
         </div>
       </div>
     </section>
     <section>
-      <p>오시는길</p>
-      <!-- * 카카오맵 - 지도퍼가기 -->
-      <!-- 1. 지도 노드 -->
-      <div
-        id="daumRoughmapContainer1699973236638"
-        class="root_daum_roughmap root_daum_roughmap_landing"
-      ></div>
-
-      <!--
-	2. 설치 스크립트
-	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
--->
-      <script
-        charset="UTF-8"
-        class="daum_roughmap_loader_script"
-        src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"
-      ></script>
-
-      <!-- 3. 실행 스크립트 -->
-      <script charset="UTF-8">
-        new daum.roughmap.Lander({
-          timestamp: "1699973236638",
-          key: "2gthe",
-          mapWidth: "1440",
-          mapHeight: "600",
-        }).render();
-      </script>
+      <div class="container margin-auto">
+        <p>오시는길</p>
+        <!-- * 카카오맵 - 지도퍼가기 -->
+        <!-- 1. 지도 노드 -->
+        <div
+          id="daumRoughmapContainer1699973236638"
+          class="root_daum_roughmap root_daum_roughmap_landing"
+        ></div>
+        <!--
+          2. 설치 스크립트
+          * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+        -->
+        <script
+          charset="UTF-8"
+          class="daum_roughmap_loader_script"
+          src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"
+        ></script>
+        <!-- 3. 실행 스크립트 -->
+        <script charset="UTF-8">
+          new daum.roughmap.Lander({
+            timestamp: "1699973236638",
+            key: "2gthe",
+            mapWidth: "1440",
+            mapHeight: "600",
+          }).render();
+        </script>
+      </div>
     </section>
     <footer>
+      <div class="container margin-auto">
         <div class="family_bg">
-            <ul class="family_site d-flex">
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-            </ul>
+          <ul class="family_site d-flex">
+            <li><img src="" alt="" /></li>
+            <li><img src="" alt="" /></li>
+            <li><img src="" alt="" /></li>
+            <li><img src="" alt="" /></li>
+          </ul>
         </div>
         <div class="footer_text">
-            <ul class="footer_link d-flex">
-                <li>이용약관</li>
-                <li>병원윤리강령</li>
-                <li>환자권리장전</li>
-                <li>개인정보처리방침</li>
-                <li>CCTV운영지침</li>
-                <li>장례식장</li>
-            </ul>
-            <div class="address d-flex">
-                <div class="offline">
-                    <p>주소 : [61710] 광주광역시 남구 서문대로 654번길 5 (구. 진월동 437번지) 
-                        대표자 : 김명종 대표번호 | 대표번호 : 062-460-7000 | FAX : 062-450-7777
-                        사업자등록번호: 408-05-98358</p>
-                </div>
-                <div class="online">
-                    <img src="" alt="">
-                </div>
+          <ul class="footer_link d-flex">
+            <li>이용약관</li>
+            <li>병원윤리강령</li>
+            <li>환자권리장전</li>
+            <li>개인정보처리방침</li>
+            <li>CCTV운영지침</li>
+            <li>장례식장</li>
+          </ul>
+          <div class="address d-flex">
+            <div class="offline">
+              <p>
+                주소 : [61710] 광주광역시 남구 서문대로 654번길 5 (구. 진월동
+                437번지) 대표자 : 김명종 대표번호 | 대표번호 : 062-460-7000 |
+                FAX : 062-450-7777 사업자등록번호: 408-05-98358
+              </p>
             </div>
+            <div class="online">
+              <img src="" alt="" />
+            </div>
+          </div>
         </div>
         <div class="copyright">
-            <p>COPYRIGHT &copy; 2013 GWANGJU CITY HOSPITAL ALL RIGHTS RESERVED. FOR QUESTIONS AND COMMENTS SEND E-MAIL TO WEBMASTER</p>
-            <img src="" alt="">
+          <p>
+            COPYRIGHT &copy; 2013 GWANGJU CITY HOSPITAL ALL RIGHTS RESERVED. FOR
+            QUESTIONS AND COMMENTS SEND E-MAIL TO WEBMASTER
+          </p>
+          <img src="" alt="" />
         </div>
+      </div>
     </footer>
     <script src="js/main.js"></script>
   </body>
