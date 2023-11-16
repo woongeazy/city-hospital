@@ -300,6 +300,7 @@ article {
   width: 708px;
   height: 348px;
   border: 1px solid #333;
+  box-sizing: border-box;
 }
 .tab_title li {
   border-right: 1px solid #333;
@@ -308,13 +309,12 @@ article {
 }
 
 // ======================================== scss
-
 .tab_title {
-    position: relative;
-    box-sizing: border-box;
-    .on {
-        font-weight: bold;
-    }
+  position: relative;
+  box-sizing: border-box;
+  .on {
+    font-weight: bold;
+  }
 
   li:nth-last-child(1),
   li:nth-last-child(2) {
@@ -323,6 +323,38 @@ article {
   li:nth-last-child(1) {
     position: absolute;
     right: 0%;
+  }
+}
+.news_top {
+  > p:nth-child(1) {
+   position: absolute;
+   background: var(--font-color);
+   color: red;
+   padding: 0px 3px;
+   top: -2%;
+   left: 2%;
+   font-size: 2rem;
+ }
+ .tab_top_text {
+  p {
+    font-family: "Noto Sans KR";
+    line-height: 145px;
+  }
+  p:nth-child(1) {
+    font-size: 1.6em;
+    font-weight: bold;
+  }
+ }
+}
+.day_border {
+  display: inline-block;
+  border: 15px solid var(--color-3);
+  padding: .5rem .5rem;
+  p:nth-child(1) {
+    text-align: center;
+    margin: 0 0 1rem;
+    font-size: 3.2em;
+    color: var(--color-3);
   }
 }
 
