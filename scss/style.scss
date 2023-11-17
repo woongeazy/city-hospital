@@ -19,12 +19,18 @@ body {
   font-size: 20px;
 }
 .body_bg {
-  background: #EBEBEB;
+  background: #ebebeb;
 }
 span {
   font-family: "Noto Sans KR", sans-serif;
 }
 /* =============================================공용 */
+.ff-noto {
+  font-family: "Noto Sans KR";
+}
+.ff-anton {
+  font-family: "Anton";
+}
 strong {
   font-size: 4rem;
 }
@@ -342,7 +348,8 @@ article {
   margin: 0 0 0 1rem;
   > p:nth-child(1) {
     position: absolute;
-    background: var(--font-color);
+    // background: var(--font-color);
+    background: #ebebeb;
     color: red;
     padding: 0px 3px;
     top: -2%;
@@ -370,6 +377,9 @@ article {
     list-style: disc;
     margin: 0 1rem;
   }
+  span {
+    color: var(--subfont-color);
+  }
 }
 .day_border {
   display: inline-block;
@@ -394,7 +404,7 @@ article {
   }
   .slide1 {
     position: relative;
-    
+
     p {
       white-space: nowrap;
       font-family: "Noto Sans KR";
@@ -404,7 +414,7 @@ article {
       top: 50%;
       transform: translate(-50%, -50%);
       color: var(--font-color);
-      line-height: .5;
+      line-height: 0.5;
       z-index: 10;
       span {
         font-size: 20px;
@@ -437,4 +447,87 @@ article {
     width: 1440px;
   }
 }
-/* ======================================== */
+
+// =======================================info
+.info_title {
+  margin: 3rem 0;
+  font-size: 1.6em;
+  strong {
+    font-size: 32px;
+    font-weight: bold;
+  }
+}
+.info {
+  .info_box {
+    width: 342px;
+    .info_text {
+      color: var(--font-color);
+      text-align: center;
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translate(-50%, 0);
+      white-space: nowrap;
+      z-index: 10;
+      p:nth-child(1) {
+        margin: 0 0 5rem 0;
+      }
+    }
+  }
+  img {
+    vertical-align: top;
+  }
+  .info_img::after {
+    content: "";
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 0 30px 0 30px;
+  }
+}
+
+/* ======================================== map*/
+.mtt-1 {
+  p:nth-child(1) {
+    margin: 3rem 0 2rem 0;
+    font-size: 1.6em;
+    display: flex;
+    justify-content: center;
+  }
+}
+//======================================footer
+.footer_bg {
+  background: #292929;
+  color: var(--font-color);
+  .family_bg {
+    background: #000;
+  }
+  .family_site {
+    padding: 1rem 5rem;
+  }
+  .footer_text {
+    line-height: 1.3;
+    .footer_link {
+      margin: 1rem 0;
+      li {
+        border-right: 1px solid var(--font-color);
+        padding: 0 1rem 0 0;
+        margin: 0 1rem 0 0;
+      }
+      li:nth-last-child(1) {
+        border: none;
+      }
+    }
+    .offline {
+      margin: 1rem 0;
+    }
+  }
+}
+.copyright {
+  font-size: .8em;
+  color: #777;
+  padding: 0 0 2rem 0;
+}

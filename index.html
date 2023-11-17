@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>씨티병원</title>
     <link rel="stylesheet" href="css/reset.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -213,10 +213,10 @@
             <article>
               <div class="tab">
                 <ul class="tab_title d-flex space-nowrap">
-                  <li><a href="#">병원소식</a></li>
-                  <li><a href="#">채용정보</a></li>
-                  <li><a href="#">질병정보</a></li>
-                  <li><a href="#">재활치료</a></li>
+                  <li>병원소식</li>
+                  <li>채용정보</li>
+                  <li>질병정보</li>
+                  <li>재활치료</li>
                   <li><i class="fa-solid fa-plus"></i></li>
                 </ul>
                 <div class="tab_contents pos-r">
@@ -233,7 +233,7 @@
                         <p>&#8211;내과</p>
                       </div>
                     </div>
-                    <div class="news_bottum">
+                    <div class="news_bottum ff-noto">
                       <div class="d-flex justify-between">
                         <p>9월 소아과 진료일정 변경안내</p>
                         <span>2023-11-09</span>
@@ -261,7 +261,7 @@
                         <p>&#8211;내과</p>
                       </div>
                     </div>
-                    <div class="news_bottum">
+                    <div class="news_bottum ff-noto">
                       <div class="d-flex justify-between">
                         <p>9월 소아과 진료일정 변경안내</p>
                         <span>2023-11-09</span>
@@ -289,7 +289,7 @@
                         <p>&#8211;내과</p>
                       </div>
                     </div>
-                    <div class="news_bottum">
+                    <div class="news_bottum ff-noto">
                       <div class="d-flex justify-between">
                         <p>9월 소아과 진료일정 변경안내</p>
                         <span>2023-11-09</span>
@@ -317,7 +317,7 @@
                         <p>&#8211;내과</p>
                       </div>
                     </div>
-                    <div class="news_bottum">
+                    <div class="news_bottum ff-noto">
                       <div class="d-flex justify-between">
                         <p>9월 소아과 진료일정 변경안내</p>
                         <span>2023-11-09</span>
@@ -340,98 +340,122 @@
       </main>
       <section>
         <div class="container margin-auto">
-          <p>믿음과 신뢰를 주는 <strong>광주씨티병원</strong>입니다.</p>
-          <div class="info">
-            <div class="info_box pos-r">
-              <img src="" class="pos-a" alt="" />
-              <p>건강정보</p>
-              <p>Lorem ipsum dolor sit amet consectetur. Metus.</p>
+          <p class="info_title">믿음과 신뢰를 주는 <strong>광주씨티병원</strong>입니다.</p>
+          <div class="info d-flex justify-between ff-noto">
+            <div class="info_box">
+              <div class="info_img pos-r">
+                <img src="images/info1.png" alt="건강정보" />
+                <div class="info_text">
+                  <p>건강정보</p>
+                  <p>Lorem ipsum dolor sit amet <br> consectetur. Metus.</p>
+                </div>
+              </div>
             </div>
-            <div class="info_box pos-r">
-              <img src="" class="pos-a" alt="" />
-              <p>상담안내</p>
-              <p>Lorem ipsum dolor sit amet consectetur. Metus.</p>
+            <div class="info_box">
+              <div class="info_img pos-r">
+                <img src="images/info2.png" alt="상담안내" />
+                <div class="info_text">
+                  <p>상담안내</p>
+                  <p>Lorem ipsum dolor sit amet <br> consectetur. Metus.</p>
+                </div>
+              </div>
             </div>
-            <div class="info_box pos-r">
-              <img src="" class="pos-a" alt="" />
-              <p>종합검사</p>
-              <p>Lorem ipsum dolor sit amet consectetur. Metus.</p>
+            <div class="info_box">
+              <div class="info_img pos-r">
+                <img src="images/info3.png" alt="종합검사" />
+                <div class="info_text">
+                  <p>종합검사</p>
+                  <p>Lorem ipsum dolor sit amet <br> consectetur. Metus.</p>
+                </div>
+              </div>
             </div>
-            <div class="info_box pos-r">
-              <img src="" class="pos-a" alt="" />
-              <p>재활치료</p>
-              <p>Lorem ipsum dolor sit amet consectetur. Metus.</p>
+            <div class="info_box">
+              <div class="info_img pos-r">
+                <img src="images/info4.png" alt="재활치료" />
+                <div class="info_text">
+                  <p>재활치료</p>
+                  <p>Lorem ipsum dolor sit amet <br> consectetur. Metus.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
       <section>
         <div class="container margin-auto">
-          <p>오시는길</p>
-          <!-- * 카카오맵 - 지도퍼가기 -->
-          <!-- 1. 지도 노드 -->
-          <div
-            id="daumRoughmapContainer1699973236638"
-            class="root_daum_roughmap root_daum_roughmap_landing"
-          ></div>
-          <!--
-            2. 설치 스크립트
-            * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
-          -->
-          <script
-            charset="UTF-8"
-            class="daum_roughmap_loader_script"
-            src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"
-          ></script>
-          <!-- 3. 실행 스크립트 -->
-          <script charset="UTF-8">
-            new daum.roughmap.Lander({
-              timestamp: "1699973236638",
-              key: "2gthe",
-              mapWidth: "1440",
-              mapHeight: "600",
-            }).render();
-          </script>
+          <div class="mtt-1">
+            <p>오시는길</p>
+            <!-- * 카카오맵 - 지도퍼가기 -->
+            <!-- 1. 지도 노드 -->
+            <div
+              id="daumRoughmapContainer1699973236638"
+              class="root_daum_roughmap root_daum_roughmap_landing"
+            ></div>
+            <!--
+              2. 설치 스크립트
+              * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+            -->
+            <script
+              charset="UTF-8"
+              class="daum_roughmap_loader_script"
+              src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"
+            ></script>
+            <!-- 3. 실행 스크립트 -->
+            <script charset="UTF-8">
+              new daum.roughmap.Lander({
+                timestamp: "1699973236638",
+                key: "2gthe",
+                mapWidth: "1440",
+                mapHeight: "600",
+              }).render();
+            </script>
+          </div>
         </div>
       </section>
       <footer>
-        <div class="container margin-auto">
+        <div class="footer_bg ff-noto">
           <div class="family_bg">
-            <ul class="family_site d-flex">
-              <li><img src="" alt="" /></li>
-              <li><img src="" alt="" /></li>
-              <li><img src="" alt="" /></li>
-              <li><img src="" alt="" /></li>
-            </ul>
-          </div>
-          <div class="footer_text">
-            <ul class="footer_link d-flex">
-              <li>이용약관</li>
-              <li>병원윤리강령</li>
-              <li>환자권리장전</li>
-              <li>개인정보처리방침</li>
-              <li>CCTV운영지침</li>
-              <li>장례식장</li>
-            </ul>
-            <div class="address d-flex">
-              <div class="offline">
-                <p>
-                  주소 : [61710] 광주광역시 남구 서문대로 654번길 5 (구. 진월동
-                  437번지) 대표자 : 김명종 대표번호 | 대표번호 : 062-460-7000 |
-                  FAX : 062-450-7777 사업자등록번호: 408-05-98358
-                </p>
-              </div>
-              <div class="online">
-                <img src="" alt="" />
+            <div class="family_bg">
+              <div class="container margin-auto">
+                <ul class="family_site d-flex justify-between">
+                  <li><img src="images/family1.png" alt="보건복지부" /></li>
+                  <li><img src="images/family2.png" alt="건강보험심사평가원" /></li>
+                  <li><img src="images/family3.png" alt="국민건강보험" /></li>
+                  <li><img src="images/family4.png" alt="대한병원협회" /></li>
+                </ul>
               </div>
             </div>
           </div>
-          <div class="copyright">
-            <p>
-              COPYRIGHT &copy; 2013 GWANGJU CITY HOSPITAL ALL RIGHTS RESERVED.
-              FOR QUESTIONS AND COMMENTS SEND E-MAIL TO WEBMASTER
-            </p>
-            <img src="" alt="" />
+          <div class="container margin-auto">
+            <div class="footer_text">
+              <ul class="footer_link d-flex">
+                <li>이용약관</li>
+                <li>병원윤리강령</li>
+                <li>환자권리장전</li>
+                <li>개인정보처리방침</li>
+                <li>CCTV운영지침</li>
+                <li>장례식장</li>
+              </ul>
+              <div class="address d-flex">
+                <div class="offline">
+                  <p>
+                    주소 : [61710] 광주광역시 남구 서문대로 654번길 5 (구. 진월동
+                    437번지) <br> 대표자 : 김명종 대표번호 | 대표번호 : 062-460-7000 |
+                    FAX : 062-450-7777 <br> 사업자등록번호: 408-05-98358
+                  </p>
+                </div>
+                <div class="online">
+                  <img src="" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="copyright d-flex justify-between align-end">
+              <p>
+                COPYRIGHT &copy; 2013 GWANGJU CITY HOSPITAL ALL RIGHTS RESERVED.
+                FOR QUESTIONS AND COMMENTS SEND E-MAIL TO WEBMASTER
+              </p>
+              <img src="images/footer_logo.png" alt="씨티병원" />
+            </div>
           </div>
         </div>
       </footer>
