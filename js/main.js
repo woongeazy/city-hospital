@@ -13,4 +13,14 @@ $(function(){
             }, 700);
         }
     }, 3000);
+
+    let tabBtn = $('.tab_title > li');
+    let tabCont = $('.tab_contents > div')
+
+    tabCont.hide().eq(0).show();
+    
+    tabBtn.on('click', function(){
+        const index = $(this).index()
+        tabCont.eq(index).show().siblings().hide()
+    });
 });
