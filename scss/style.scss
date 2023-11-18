@@ -178,11 +178,46 @@ html {
 }
 
 /* ========================================header */
-.header_top img {
-  max-width: 100%;
-  height: auto;
-  object-fit: contain;
+.header_top {
+  font-family: "Noto Sans KR";
+  font-size: 16px;
+  height: 65px;
+  white-space: nowrap;
+  margin: .5rem 0;
+  .header_icons {
+    height: 60px;
+    .phone_number {
+      span:nth-child(1) {
+        font-size: 20px;
+        color: var(--color-1);
+        font-weight: bold;
+      }
+      span:nth-child(2) {
+        font-size: 16px;
+      }
+    }
+    .phone {
+      margin: 0 3rem 0 0;
+    }
+    .time {
+      .time_icon {
+        p {
+          margin: 0 0 0.5rem 0;
+        }
+        img {
+          width: 70%;
+          height: 70%;
+        }
+      }
+      .time_text {
+        p:nth-child(2) {
+          color: var(--color-1);
+        }
+      }
+    }
+  }
 }
+
 /* ========================================nav */
 nav {
   border-top: 1px solid var(--subfont-color);
@@ -527,7 +562,7 @@ article {
   }
 }
 .copyright {
-  font-size: .8em;
+  font-size: 0.8em;
   color: #777;
   padding: 0 0 2rem 0;
 }
