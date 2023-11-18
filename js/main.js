@@ -23,4 +23,9 @@ $(function(){
         const index = $(this).index()
         tabCont.eq(index).show().siblings().hide()
     });
+
+    $('.gnb > li').on('mouseover', function(){
+        console.log("over 함");
+        $('.lnb').css("display", "bolck");
+    });
 });

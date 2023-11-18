@@ -183,7 +183,7 @@ html {
   font-size: 16px;
   height: 65px;
   white-space: nowrap;
-  margin: .5rem 0;
+  margin: 0.5rem 0;
   .header_icons {
     height: 60px;
     .phone_number {
@@ -226,16 +226,34 @@ nav {
   border-top: 1px solid var(--subfont-color);
 }
 nav::after {
+  display: none;
   content: "";
-  background: var(--subfont-color);
+  background: var(--font-color);
   width: 100%;
-  height: 100px;
+  height: 800%;
   position: absolute;
   z-index: 10;
+  transition: all 300ms;
 }
 .gnb {
-  padding: 1rem 0;
-  position: relative;
+  height: 52px;
+  line-height: 52px;
+  white-space: nowrap;
+  box-sizing: border-box;
+  font-family: "Noto Sans KR";
+  > li{
+    width: 230px;
+    height: 100%;
+    position: relative;
+    text-align: center;
+  } 
+  > li:nth-child(1){
+    width: 20px;
+  }
+  > li:nth-last-child(1) {
+    width: 20px;
+  }
+  
 }
 .fa-regular {
   color: #1c1c1c;
@@ -243,6 +261,20 @@ nav::after {
 .lnb {
   display: none;
   position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 20;
+  width: 100%;
+  transition: all 300ms;
+  li {
+    text-align: center;
+    width: 100%;
+    a {
+      display: inline-block;
+      height: 52px;
+      line-height: 52px;
+    }
+  }
 }
 /* ========================================slide */
 /* ========================================main */
