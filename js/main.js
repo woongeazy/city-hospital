@@ -37,11 +37,11 @@ $(function () {
     $("nav, .lnb").toggleClass("on");
   });
 
-  $(".gnb li").on("mouseover", function () {
+  lnbBtn.on("mouseover", function () {
     $(this).css({ background: "var(--color-1)", color: "var(--font-color" });
   });
 
-  $(".gnb li").on("mouseout", function () {
+  lnbBtn.on("mouseout", function () {
     $(this).css({background: "none", color: "#000"});
   });
 
@@ -55,5 +55,5 @@ let menuTogg = 0;
 let selectWind = $("nav, nav > form");
 
 let lnbBtn = $(
-  ".gnb > li:nth-child(2), .gnb > li:nth-child(3), .gnb > li:nth-child(4), .gnb > li:nth-child(5), .gnb > li:nth-child(6)"
+  ".gnb > li:nth-child(2), .gnb > li:nth-child(2) li, .gnb > li:nth-child(3), .gnb > li:nth-child(3) li, .gnb > li:nth-child(4), .gnb > li:nth-child(4) li, .gnb > li:nth-child(5), .gnb > li:nth-child(5) li, .gnb > li:nth-child(6), .gnb > li:nth-child(6) li"
 );
