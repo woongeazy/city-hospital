@@ -219,22 +219,26 @@ html {
 }
 
 /* ========================================nav */
-nav {
-  & {
-    position: relative;
-  }
-  border-top: 1px solid var(--subfont-color);
-}
 nav::after {
-  display: none;
+  display: block;
   content: "";
   background: var(--font-color);
   width: 100%;
-  height: 800%;
+  height: 0%;
   position: absolute;
   z-index: 10;
   transition: all 300ms;
 }
+nav {
+  & {
+    position: relative;
+  }
+  &.on::after {
+    height: 800%;
+  }
+  border-top: 1px solid var(--subfont-color);
+}
+
 .gnb {
   height: 52px;
   line-height: 52px;
@@ -259,13 +263,18 @@ nav::after {
   color: #1c1c1c;
 }
 .lnb {
-  display: none;
+  display: block;
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
   z-index: 20;
   width: 100%;
+  height: 0;
+  overflow: hidden;
   transition: all 300ms;
+  &.on {
+    height: 800%;
+  }
   li {
     text-align: center;
     width: 100%;

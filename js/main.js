@@ -24,8 +24,20 @@ $(function(){
         tabCont.eq(index).show().siblings().hide()
     });
 
-    $('.gnb > li').on('mouseover', function(){
-        console.log("over 함");
-        $('.lnb').css("display", "bolck");
+    lnbBtn.on('mouseover', function(){
+        $('nav, .lnb').addClass("on");
+    });
+
+    lnbBtn.on('mouseout', function(){
+        $('nav, .lnb').removeClass("on");
+    });
+    
+    // toggleClass 클래스를 추가하거나 제거
+    $('.gnb > li:nth-child(1)').on('click', function(){
+        $('nav, .lnb').toggleClass("on");
     });
 });
+
+let menuTogg = 0;
+
+let lnbBtn = $('.gnb > li:nth-child(2), .gnb > li:nth-child(3), .gnb > li:nth-child(4), .gnb > li:nth-child(5), .gnb > li:nth-child(6)')
