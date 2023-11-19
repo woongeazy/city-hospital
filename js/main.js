@@ -14,16 +14,6 @@ $(function () {
     }
   }, 3000);
 
-  let tabBtn = $(".tab_title > li");
-  let tabCont = $(".tab_contents > div");
-
-  tabCont.hide().eq(0).show();
-
-  tabBtn.on("click", function () {
-    const index = $(this).index();
-    tabCont.eq(index).show().siblings().hide();
-  });
-
   lnbBtn.on("mouseover", function () {
     $("nav, .lnb").addClass("on");
   });
@@ -42,13 +32,28 @@ $(function () {
   });
 
   lnbBtn.on("mouseout", function () {
-    $(this).css({background: "none", color: "#000"});
+    $(this).css({ background: "none", color: "#000" });
   });
 
   $(".gnb > li:nth-last-child(1)").on("click", function () {
     selectWind.toggleClass("se");
   });
+
+  tabCont.hide().eq(0).show();
+  tabBtn.removeClass('bo').eq(0).addClass('bo')
+
+  tabBtn.on("click", function () {
+    const index = $(this).index();
+    $(this).addClass('bo').siblings().removeClass('bo')
+    tabCont.eq(index).show().siblings().hide();
+  });
+
+  $("");
 });
+
+let tabBtn = $(".tab_title > li:nth-child(1), .tab_title > li:nth-child(2), .tab_title > li:nth-child(3), .tab_title > li:nth-child(4)");
+
+let tabCont = $(".tab_contents > div");
 
 let menuTogg = 0;
 

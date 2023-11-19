@@ -13,6 +13,7 @@
   --font-color: #fff;
   --subfont-color: #808080;
   --main-bg: #ebebeb;
+  --black-color: #000;
 }
 
 body {
@@ -443,38 +444,46 @@ article {
 .tab {
   width: 708px;
   height: 348px;
-  border: 1px solid #333;
+  // border: 1px solid #333;
   box-sizing: border-box;
-}
-.tab_title li {
-  border-right: 1px solid #333;
-  margin: 1rem 0;
-  padding: 0 2rem;
+  background: var(--font-color);
 }
 
 // ======================================== scss
 .tab_title {
   position: relative;
   box-sizing: border-box;
-  .on {
+  li {
+    border-right: 1px solid #333;
+    margin: 1rem 0;
+    padding: 0 2rem;
+    width: 137px;
+    height: 20px;
+    box-sizing: border-box;
+    color: var(--subfont-color);
+  }
+  .bo{
     font-weight: bold;
+    color: var(--black-color);
   }
 
-  li:nth-last-child(1),
   li:nth-last-child(2) {
     border: none;
   }
   li:nth-last-child(1) {
+    border: none;
     position: absolute;
     right: 0%;
+    width: 82px;
+    color: var(--black-color);
   }
 }
 .news_top {
   margin: 0 0 0 1rem;
   > p:nth-child(1) {
     position: absolute;
-    // background: var(--font-color);
-    background: var(--main-bg);
+    background: var(--font-color);
+    // background: var(--main-bg);
     color: red;
     padding: 0px 3px;
     top: -2%;
@@ -486,10 +495,17 @@ article {
       font-family: "Noto Sans KR";
       line-height: 2;
       margin: 0 0 0 1rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
     p:nth-child(1) {
       font-size: 1.6em;
       font-weight: bold;
+    }
+    p:nth-child(2) {
+      width: 500px;
+      height: 40px;
     }
     p:nth-last-child(1) {
       color: var(--subfont-color);
@@ -510,6 +526,8 @@ article {
   display: inline-block;
   border: 15px solid var(--color-1);
   padding: 0.5rem 0.5rem;
+  width: 110px;
+  box-sizing: border-box;
   p:nth-child(1) {
     text-align: center;
     margin: 0 0 1rem;
