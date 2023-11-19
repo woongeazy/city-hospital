@@ -48,6 +48,9 @@ strong {
 .pos-f {
   position: fixed;
 }
+.d-grid {
+  display: grid;
+}
 .d-flex {
   display: flex;
 }
@@ -673,4 +676,79 @@ article {
   font-size: 0.8em;
   color: #777;
   padding: 0 0 2rem 0;
+}
+
+//sub
+.sub_bg {
+  height: 340px;
+  width: 100%;
+  background: url(../images/sub_bg.png) no-repeat top / contain;
+  background-size: cover;
+}
+.sub-link {
+  grid-template-columns: repeat(6, 1fr);
+  grid-row-gap: 24px;
+  padding: 2rem 0;
+
+  li {
+    width: 219px;
+    height: 219px;
+    background: var(--color-2);
+    border-radius: 30px;
+  }
+}
+.sub_contents {
+  > p:nth-child(1) {
+    
+  }
+}
+.profile {
+  font-family: "Noto Sans KR";
+  margin: 3rem 0;
+  grid-template-columns: 20% 8% auto;
+  grid-template-rows: 80% 20%;
+  grid-template-areas:
+    'a b c'
+    'a d d';
+  .profile_img {
+    width: 220px;
+    height: 308px;
+    background: var(--color-4);
+    grid-area: a;
+  }
+  .profile_left {
+    grid-area: b;
+    > p:nth-child(1) {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+  }
+  .profile_rihgt {
+    grid-area: c;
+  }
+  .profile_button {
+    grid-area: d;
+    
+    button {
+      height: 100%;
+      width: 18%;
+      font-size: 20px;
+      border: none;
+      background: var(--color-1);
+      color: var(--font-color);
+      font-weight: bold;
+    }
+    .profile_icons {
+      img {
+        margin: 0 1rem 0 0;
+      }
+      p:nth-child(2) {
+        margin: 0 2rem 0 0;
+      }
+    }
+
+  }
+  .p_num p {
+    margin: 0 0 1rem 0;
+  }
 }

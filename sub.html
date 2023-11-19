@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>씨티병원</title>
+    <link rel="stylesheet" href="css/reset.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+KR&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shotcut icon" href="images/favicon.png" type="image/x-icon" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+      integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/b6416cbed4.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container margin-auto">
+        <div class="header_top d-flex justify-between align-center">
+          <div class="logo">
+            <a href="index.html"
+              ><img src="images/logo.png" alt="광주씨티병원"
+            /></a>
+          </div>
+          <div class="header_icons d-flex">
+            <div class="phone gap-1 d-flex">
+              <img src="images/call.png" alt="전화" />
+              <div class="phone_number d-flex flex-column justify-between">
+                <span>062-460-7999</span>
+                <span>FAX:062-480-7777</span>
+              </div>
+            </div>
+            <div class="time gap-1 d-flex">
+              <div class="time_icon d-flex flex-column align-center">
+                <p>진료시간</p>
+                <img src="images/time.png" alt="진료시간" />
+              </div>
+              <div class="time_text d-flex flex-column justify-between">
+                <p>평일</p>
+                <p>토요일</p>
+                <p>점심시간</p>
+              </div>
+              <div class="d-flex flex-column justify-between">
+                <p>09:00 ~ 17:30</p>
+                <p>09:00 ~ 13:00</p>
+                <p>12:30 ~ 14:00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <div class="container margin-auto">
+        <ul class="gnb d-flex justify-between">
+          <li>
+            <i class="fa-solid fa-bars"></i>
+          </li>
+          <li>
+            <a href="#">진료안내&#183;예약</a>
+            <ul class="lnb">
+              <li><a href="#">진료과/의료진소개</a></li>
+              <li><a href="#">외래 진료절차</a></li>
+              <li><a href="#">입원/퇴원 진료절차</a></li>
+              <li><a href="#">병문안 안내</a></li>
+              <li><a href="#">비급여, 진료비용고지</a></li>
+              <li><a href="#">진료기록사본발급</a></li>
+              <li><a href="#">대리처방</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">이용안내</a>
+            <ul class="lnb">
+              <li><a href="#">찾아오시는길</a></li>
+              <li><a href="#">부서별 위치안내도</a></li>
+              <li><a href="#">진단서, 증명서 발급</a></li>
+              <li><a href="#">주차시설</a></li>
+              <li><a href="#">원내 전화번호</a></li>
+              <li><a href="#">고객한미디</a></li>
+              <li><a href="#">개인정보취급방침</a></li>
+              <li><a href="#">한자권리보호/인전괸리체제</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">정보마당</a>
+            <ul class="lnb">
+              <li><a href="#">건강생활정보</a></li>
+              <li><a href="#">의학질병정보</a></li>
+              <li><a href="#">채용정보</a></li>
+              <li><a href="#">동영상 강좌보기</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">병원소식</a>
+            <ul class="lnb">
+              <li><a href="#">씨티갤러리</a></li>
+              <li><a href="#">설문보기</a></li>
+              <li><a href="#">병원소식지</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">병원소개</a>
+            <ul class="lnb">
+              <li><a href="#">대표원장 인사말</a></li>
+              <li><a href="#">설립이념/병원개요</a></li>
+              <li><a href="#">조직도</a></li>
+              <li><a href="#">병원연혁</a></li>
+              <li><a href="#">첨단의료장비</a></li>
+              <li><a href="#">보도자료실/신문장송</a></li>
+              <li><a href="#">고객만족도조사</a></li>
+            </ul>
+          </li>
+          <li>
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </li>
+        </ul>
+      </div>
+      <form>
+        <fieldset>
+          <!-- <legend></legend> -->
+          <input
+            type="text"
+            class="top_select_window"
+            placeholder="검색어를 입력하고 Enter 또는 검색 아이콘을 클릭 해주세요."
+          />
+          <!-- submit -->
+          <!-- <input type="submit" class="m_search_btn"> -->
+          <button class="search_btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </fieldset>
+      </form>
+    </nav>
+
+    <div class="sub_bg"></div>
+    <div class="container margin-auto">
+        <ul class="sub-link d-grid">
+            <li><a href="#"><img src="" alt=""></a></li>
+            <li><a href="#"><img src="" alt=""></a></li>
+            <li><a href="#"><img src="" alt=""></a></li>
+            <li><a href="#"><img src="" alt=""></a></li>
+            <li><a href="#"><img src="" alt=""></a></li>
+            <li><a href="#"><img src="" alt=""></a></li>
+            <li><a href="#"><img src="" alt=""></a></li>
+            <li><a href="#"><img src="" alt=""></a></li>
+            <li><a href="#"><img src="" alt=""></a></li>
+            <li><a href="#"><img src="" alt=""></a></li>
+            <li><a href="#"><img src="" alt=""></a></li>
+            <li><a href="#"><img src="" alt=""></a></li>
+        </ul>
+        <div class="sub_contents">
+            <p>정형외과</p>
+            <div class="profile d-grid">
+                <div class="profile_img">
+                    <img src="" alt="">
+                </div>
+                <div class="profile_left d-flex flex-column justify-between">
+                    <p>김명종</p>
+                    <p>진료분야</p>
+                    <div class="p_num">
+                        <p>대표번호</p>
+                        <p>정형외과 1</p>
+                    </div>
+                </div>
+                <div class="profile_right d-flex flex-column justify-between">
+                    <p>&#91;정형외과&#93;</p>
+                    <p>인공관절클리닉, 골다공증클리닉, 선천성기형, 소아정형외과</p>
+                    <div class="p_num">
+                        <p>062-000-0000</p>
+                        <p>062-000-0000</p>
+                    </div>
+                </div>
+                <div class="profile_button d-flex align-end justify-between">
+                    <button>경력사항</button>
+                    <div class="profile_icons d-flex align-center">
+                        <img src="images/o.png" alt="진료">
+                        <p>진료</p>
+                        <img src="images/t.png" alt="수술">
+                        <p>수술</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer_bg ff-noto">
+          <div class="family_bg">
+            <div class="family_bg">
+              <div class="container margin-auto">
+                <ul class="family_site d-flex justify-between">
+                  <li>
+                    <a href="https://www.mohw.go.kr/"
+                      ><img src="images/family1.png" alt="보건복지부"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="https://www.hira.or.kr/"
+                      ><img src="images/family2.png" alt="건강보험심사평가원"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="https://www.nhis.or.kr/nhis/index.do"
+                      ><img src="images/family3.png" alt="국민건강보험"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="https://www.kha.or.kr/main"
+                      ><img src="images/family4.png" alt="대한병원협회"
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="container margin-auto">
+            <div class="footer_text">
+              <ul class="footer_link d-flex">
+                <li>이용약관</li>
+                <li>병원윤리강령</li>
+                <li>환자권리장전</li>
+                <li>개인정보처리방침</li>
+                <li>CCTV운영지침</li>
+                <li>장례식장</li>
+              </ul>
+              <div class="address d-flex">
+                <div class="offline">
+                  <p>
+                    주소 : [61710] 광주광역시 남구 서문대로 654번길 5 (구.
+                    진월동 437번지) <br />
+                    대표자 : 김명종 대표번호 | 대표번호 : 062-460-7000 | FAX :
+                    062-450-7777 <br />
+                    사업자등록번호: 408-05-98358
+                  </p>
+                </div>
+                <div class="online">
+                  <img src="" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="copyright d-flex justify-between align-end">
+              <p>
+                COPYRIGHT &copy; 2013 GWANGJU CITY HOSPITAL ALL RIGHTS RESERVED.
+                FOR QUESTIONS AND COMMENTS SEND E-MAIL TO WEBMASTER
+              </p>
+              <img src="images/footer_logo.png" alt="씨티병원" />
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
