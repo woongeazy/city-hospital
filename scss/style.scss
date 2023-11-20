@@ -723,8 +723,11 @@ article {
       font-weight: bold;
     }
   }
-  .profile_rihgt {
+  .profile_right {
     grid-area: c;
+    p:nth-child(1) {
+      height: 30px;
+    }
   }
   .profile_button {
     grid-area: d;
@@ -750,6 +753,10 @@ article {
   .p_num p {
     margin: 0 0 1rem 0;
   }
+}
+.sub_contents > p:nth-child(1) {
+  font-size: 1.6em;
+  font-weight: bold;
 }
 .schedule {
   width: 100%;
