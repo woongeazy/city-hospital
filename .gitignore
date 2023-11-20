@@ -1,12 +1,12 @@
-sass/
-*.scss
-*.sass
-*.map
+# sass/
+# *.scss
+# *.sass
+# *.map
 
 # sass 추적 제외 설정
-.sass-cache/
-*.css.map
-*.sass.map
-*.scss.map
+# .sass-cache/
+# *.css.map
+# *.sass.map
+# *.scss.map
 
 # github 제외

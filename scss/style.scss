@@ -9,6 +9,8 @@
   --color-6: #005838;
   --color-7: #ff7700;
   --color-8: #ffba53;
+  --border-color: #decbba;
+  --border-bg: #fff9e9;
   --color-9: #f33a00;
   --font-color: #fff;
   --subfont-color: #808080;
@@ -233,6 +235,7 @@ nav::after {
   position: absolute;
   z-index: 10;
   transition: all 300ms;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
 }
 nav {
   & {
@@ -274,6 +277,9 @@ nav {
       background: none;
       font-size: 2em;
       border: none;
+      span {
+        display: none;
+      }
     }
   }
 }
@@ -354,7 +360,7 @@ main {
   padding: 0.5rem 1rem;
   color: var(--font-color);
   font-size: 20px;
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: "Noto Sans KR";
 }
 .select_btns button:nth-child(2) {
   border-left: none;
@@ -465,7 +471,7 @@ article {
     box-sizing: border-box;
     color: var(--subfont-color);
   }
-  .bo{
+  .bo {
     font-weight: bold;
     color: var(--black-color);
   }
@@ -697,23 +703,17 @@ article {
     border-radius: 30px;
   }
 }
-.sub_contents {
-  > p:nth-child(1) {
-    
-  }
-}
 .profile {
   font-family: "Noto Sans KR";
   margin: 3rem 0;
   grid-template-columns: 20% 8% auto;
   grid-template-rows: 80% 20%;
   grid-template-areas:
-    'a b c'
-    'a d d';
+    "a b c"
+    "a d d";
   .profile_img {
     width: 220px;
     height: 308px;
-    background: var(--color-4);
     grid-area: a;
   }
   .profile_left {
@@ -728,7 +728,7 @@ article {
   }
   .profile_button {
     grid-area: d;
-    
+
     button {
       height: 100%;
       width: 18%;
@@ -746,9 +746,52 @@ article {
         margin: 0 2rem 0 0;
       }
     }
-
   }
   .p_num p {
     margin: 0 0 1rem 0;
+  }
+}
+.schedule {
+  width: 100%;
+  height: 240px;
+  border-bottom: 1px solid var(--border-color);
+  margin: 0 0 1rem 0;
+  display: grid;
+  grid-template-areas:
+    "a"
+    "b"
+    "b"
+    "c"
+    "c";
+  .schedule_header {
+    display: grid;
+    grid-area: a;
+    grid-template-columns: repeat(7, 1fr);
+    background: var(--border-bg);
+  }
+  .schedule_mid {
+    display: grid;
+    grid-area: b;
+    grid-template-columns: repeat(7, 1fr);
+  }
+  .schedule_bottum {
+    display: grid;
+    grid-area: c;
+    grid-template-columns: repeat(7, 1fr);
+  }
+  .s-bg {
+    border: 1px solid var(--border-color);
+    border-right: none;
+    border-bottom: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    &:nth-child(1) {
+      background: var(--border-bg);
+    }
+    &:nth-last-child(1) {
+      border-right: 1px solid var(--border-color);
+    }
   }
 }
