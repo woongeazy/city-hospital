@@ -48,7 +48,21 @@ $(function () {
     tabCont.eq(index).show().siblings().hide();
   });
 
-  $("");
+
+
+
+  
+  subCtent.hide().eq(0).show();
+
+  subtBtn.eq(0).addClass('on')
+  
+  subtBtn.on('click', function(e){
+    e.preventDefault();
+    const index = $(this).index();
+    $(this).addClass('on').siblings().removeClass('on')
+    subCtent.eq(index).show().siblings().hide();
+  });
+
 });
 
 let tabBtn = $(".tab_title > li:nth-child(1), .tab_title > li:nth-child(2), .tab_title > li:nth-child(3), .tab_title > li:nth-child(4)");
@@ -62,3 +76,7 @@ let selectWind = $("nav, nav > form");
 let lnbBtn = $(
   ".gnb > li:nth-child(2), .gnb > li:nth-child(2) li, .gnb > li:nth-child(3), .gnb > li:nth-child(3) li, .gnb > li:nth-child(4), .gnb > li:nth-child(4) li, .gnb > li:nth-child(5), .gnb > li:nth-child(5) li, .gnb > li:nth-child(6), .gnb > li:nth-child(6) li"
 );
+
+let subtBtn = $(".sub-link > li");
+
+let subCtent = $('.big_contents > div')
