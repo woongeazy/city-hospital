@@ -291,6 +291,7 @@ nav {
   box-sizing: border-box;
   font-family: "Noto Sans KR";
   > li {
+    cursor: pointer;
     width: 280px;
     height: 100%;
     position: relative;
@@ -356,6 +357,7 @@ main {
   white-space: nowrap;
 }
 .select_btns button {
+  cursor: pointer;
   border: 1px solid var(--font-color);
   padding: 0.5rem 1rem;
   color: var(--font-color);
@@ -463,6 +465,7 @@ article {
   position: relative;
   box-sizing: border-box;
   li {
+    cursor: pointer;
     border-right: 1px solid #333;
     margin: 1rem 0;
     padding: 0 2rem;
@@ -730,7 +733,7 @@ article {
 .profile {
   font-family: "Noto Sans KR";
   margin: 3rem 0;
-  grid-template-columns: 20% 8% auto;
+  grid-template-columns: 20% 11% auto;
   grid-template-rows: 80% 20%;
   grid-template-areas:
     "a b c"
@@ -746,10 +749,13 @@ article {
       font-size: 1.5em;
       font-weight: bold;
     }
+    p {
+      white-space: nowrap;
+    }
   }
   .profile_right {
     grid-area: c;
-    p:nth-child(1) {
+    > p:nth-child(1) {
       height: 30px;
     }
   }
